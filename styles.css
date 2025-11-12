@@ -307,15 +307,15 @@ section {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .service-card {
     background: var(--white);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 15px;
     box-shadow: var(--shadow-sm);
     text-align: center;
@@ -338,16 +338,34 @@ section {
     color: var(--text-dark);
 }
 
-.service-card p {
+.service-card > p {
     color: var(--text-light);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.service-details {
+    list-style: none;
+    text-align: left;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.service-details li {
+    padding: 0.5rem 0;
+    color: var(--text-light);
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.service-details li:last-child {
+    border-bottom: none;
 }
 
 .service-price {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 /* ===== Facility Showcase ===== */
@@ -428,6 +446,74 @@ section {
     color: var(--text-light);
 }
 
+/* ===== Special Features Highlight ===== */
+.special-features {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    padding: 5rem 0;
+}
+
+.special-features .section-title {
+    color: var(--white);
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.highlight-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.highlight-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.highlight-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.highlight-card p {
+    line-height: 1.8;
+    opacity: 0.95;
+}
+
+.highlight-card strong {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* ===== Service Details ===== */
+.service-details strong {
+    color: var(--primary-color);
+}
+
+.special-note {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: rgba(8, 145, 178, 0.1);
+    border-radius: 8px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
 /* ===== Pricing Section ===== */
 .pricing {
     background: var(--light-bg);
@@ -435,15 +521,15 @@ section {
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .pricing-card {
     background: var(--white);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 15px;
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
@@ -457,7 +543,8 @@ section {
 }
 
 .pricing-card.featured {
-    border: 2px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
+    background: linear-gradient(to bottom, rgba(8, 145, 178, 0.05), var(--white));
 }
 
 .popular-badge {
@@ -467,37 +554,62 @@ section {
     transform: translateX(-50%);
     background: var(--primary-color);
     color: var(--white);
-    padding: 0.4rem 1.2rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 20px;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }
 
 .pricing-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
     color: var(--text-dark);
 }
 
 .price {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
 }
 
 .amount {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 800;
     color: var(--primary-color);
+    line-height: 1;
+}
+
+.price-detail {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
 .pricing-features {
     list-style: none;
     text-align: left;
     margin: 1.5rem 0;
+    padding: 1rem;
+    background: var(--light-bg);
+    border-radius: 10px;
 }
 
 .pricing-features li {
-    padding: 0.5rem 0;
-    color: var(--text-light);
+    padding: 0.6rem 0;
+    color: var(--text-dark);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.payment-note {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background: rgba(8, 145, 178, 0.1);
+    border-radius: 8px;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 0.9rem;
 }
 
 
@@ -682,6 +794,7 @@ section {
 
     .services-grid,
     .features-grid,
+    .highlight-grid,
     .pricing-grid,
     .contact-grid {
         grid-template-columns: 1fr;
