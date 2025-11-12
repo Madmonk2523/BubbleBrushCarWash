@@ -446,6 +446,225 @@ section {
     color: var(--text-light);
 }
 
+/* ===== Instructions Section ===== */
+.instructions-section {
+    background: var(--light-bg);
+    padding: 5rem 0;
+}
+
+.instructions-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.instructions-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.instruction-step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.instruction-step:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-1);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.step-content h3 {
+    color: var(--text-dark);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.step-content p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.step-content strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.instructions-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-box {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.info-box h3 {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-box p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.pricing-box {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border: 2px solid var(--primary-light);
+}
+
+.pricing-box .token-info {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.pricing-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.pricing-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(8, 145, 178, 0.1);
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.pricing-list li:last-child {
+    border-bottom: none;
+}
+
+.minimum-note {
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.restart-note {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+    text-align: center;
+}
+
+.warning-box {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border: 2px solid var(--accent-color);
+}
+
+.warning-box h3 {
+    color: #92400e;
+}
+
+.rules-list {
+    list-style: none;
+    padding: 0;
+}
+
+.rules-list li {
+    padding: 0.75rem 0;
+    color: #78350f;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.rules-list li:last-child {
+    border-bottom: none;
+}
+
+.rules-list strong {
+    color: #b45309;
+    font-weight: 700;
+}
+
+.products-box {
+    background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+    border: 2px solid #a855f7;
+}
+
+.products-box h3 {
+    color: #6b21a8;
+}
+
+.products-box p {
+    color: #7c3aed;
+    font-weight: 500;
+}
+
+.disclaimer-box {
+    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    border: 2px solid #ef4444;
+}
+
+.disclaimer-box h3 {
+    color: #991b1b;
+}
+
+.disclaimer-box p {
+    color: #b91c1c;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.add-time-notice {
+    background: var(--gradient-1);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 3rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.add-time-notice h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.add-time-notice p {
+    font-size: 1.1rem;
+}
+
 /* ===== Special Features Highlight ===== */
 .special-features {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -790,6 +1009,38 @@ section {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    .instructions-content {
+        grid-template-columns: 1fr;
+    }
+
+    .instructions-main,
+    .instructions-sidebar {
+        width: 100%;
+    }
+
+    .instruction-step {
+        padding: 1.5rem;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .step-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .add-time-notice {
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .add-time-notice h3 {
+        font-size: 1.2rem;
     }
 
     .services-grid,
