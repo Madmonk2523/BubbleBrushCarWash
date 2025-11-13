@@ -519,7 +519,7 @@ section {
 .instructions-main {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 4rem;
 }
 
 .instruction-step {
@@ -703,21 +703,23 @@ section {
     line-height: 1.6;
 }
 
-/* Facility Image in Sidebar */
-.facility-box {
-    background: transparent;
-    padding: 0;
-    border: none;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+/* Facility Entrance Image */
+.facility-image-container {
+    position: relative;
+    max-width: 1400px;
+    margin: 3rem auto 0;
+    border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
-.sidebar-facility-image {
+.facility-entrance-image {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 12px;
+    max-height: 700px;
     object-fit: cover;
+    object-position: center;
 }
 
 .add-time-notice {
@@ -1424,12 +1426,13 @@ section {
     }
 
     /* Facility Image Mobile */
-    .facility-box {
-        margin-top: 1.5rem;
+    .facility-image-container {
+        margin: 2.5rem 0 0;
+        border-radius: 15px;
     }
 
-    .sidebar-facility-image {
-        max-height: 300px;
+    .facility-entrance-image {
+        max-height: 500px;
     }
 
     /* Perfect Section Spacing */
@@ -1468,7 +1471,7 @@ section {
 
     .instruction-step {
         padding: 1.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         display: flex;
         align-items: flex-start;
         gap: 1rem;
@@ -1818,12 +1821,13 @@ section {
     }
 
     /* Compact Facility Image */
-    .facility-box {
-        margin-top: 1rem;
+    .facility-image-container {
+        margin: 2rem 0 0;
+        border-radius: 12px;
     }
 
-    .sidebar-facility-image {
-        max-height: 250px;
+    .facility-entrance-image {
+        max-height: 400px;
     }
 
     /* Compact Sections */
@@ -1848,7 +1852,7 @@ section {
     .instruction-step {
         padding: 1.25rem;
         gap: 0.75rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
     }
 
     .step-number {
