@@ -519,7 +519,7 @@ section {
 .instructions-main {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 
 .instruction-step {
@@ -1468,7 +1468,7 @@ section {
 
     .instruction-step {
         padding: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         display: flex;
         align-items: flex-start;
         gap: 1rem;
@@ -1848,6 +1848,7 @@ section {
     .instruction-step {
         padding: 1.25rem;
         gap: 0.75rem;
+        margin-bottom: 1.5rem;
     }
 
     .step-number {
