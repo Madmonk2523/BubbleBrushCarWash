@@ -703,45 +703,21 @@ section {
     line-height: 1.6;
 }
 
-/* Facility Entrance Image */
-.facility-image-container {
-    position: relative;
-    max-width: 1200px;
-    margin: 1.5rem auto 0;
-    border-radius: 20px;
+/* Facility Image in Sidebar */
+.facility-box {
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
-.facility-entrance-image {
+.sidebar-facility-image {
     width: 100%;
     height: auto;
     display: block;
-    max-height: 550px;
+    border-radius: 12px;
     object-fit: cover;
-    object-position: center;
-}
-
-.facility-badge {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--text-dark);
-    border: 2px solid rgba(8, 145, 178, 0.3);
-}
-
-.facility-badge .badge-icon {
-    font-size: 1.5rem;
 }
 
 .add-time-notice {
@@ -1448,13 +1424,12 @@ section {
     }
 
     /* Facility Image Mobile */
-    .facility-image-container {
-        margin: 1.5rem 0 0;
-        border-radius: 12px;
+    .facility-box {
+        margin-top: 1.5rem;
     }
 
-    .facility-entrance-image {
-        max-height: 350px;
+    .sidebar-facility-image {
+        max-height: 300px;
     }
 
     /* Perfect Section Spacing */
@@ -1843,13 +1818,12 @@ section {
     }
 
     /* Compact Facility Image */
-    .facility-image-container {
-        margin: 1rem 0 0;
-        border-radius: 10px;
+    .facility-box {
+        margin-top: 1rem;
     }
 
-    .facility-entrance-image {
-        max-height: 280px;
+    .sidebar-facility-image {
+        max-height: 250px;
     }
 
     /* Compact Sections */
