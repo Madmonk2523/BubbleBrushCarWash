@@ -279,10 +279,11 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    line-height: 1.2;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+    line-height: 1.1;
+    letter-spacing: -2px;
 }
 
 .highlight {
@@ -1230,11 +1231,8 @@ section {
     }
 
     .hero-title {
-        font-size: 2.5rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.3rem;
+        font-size: 3rem;
+        letter-spacing: -1px;
     }
 
     .hero-description {
