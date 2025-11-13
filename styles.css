@@ -707,7 +707,7 @@ section {
 .facility-image-container {
     position: relative;
     max-width: 1200px;
-    margin: 3rem auto 0;
+    margin: 1.5rem auto 0;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -717,7 +717,7 @@ section {
     width: 100%;
     height: auto;
     display: block;
-    max-height: 600px;
+    max-height: 550px;
     object-fit: cover;
     object-position: center;
 }
@@ -1449,23 +1449,12 @@ section {
 
     /* Facility Image Mobile */
     .facility-image-container {
-        margin: 2rem 0 0;
+        margin: 1.5rem 0 0;
         border-radius: 12px;
     }
 
     .facility-entrance-image {
-        max-height: 400px;
-    }
-
-    .facility-badge {
-        bottom: 15px;
-        right: 15px;
-        padding: 0.75rem 1.25rem;
-        font-size: 0.95rem;
-    }
-
-    .facility-badge .badge-icon {
-        font-size: 1.3rem;
+        max-height: 350px;
     }
 
     /* Perfect Section Spacing */
@@ -1855,23 +1844,12 @@ section {
 
     /* Compact Facility Image */
     .facility-image-container {
-        margin: 1.5rem 0 0;
+        margin: 1rem 0 0;
         border-radius: 10px;
     }
 
     .facility-entrance-image {
-        max-height: 300px;
-    }
-
-    .facility-badge {
-        bottom: 10px;
-        right: 10px;
-        padding: 0.6rem 1rem;
-        font-size: 0.85rem;
-    }
-
-    .facility-badge .badge-icon {
-        font-size: 1.2rem;
+        max-height: 280px;
     }
 
     /* Compact Sections */
