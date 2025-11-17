@@ -772,6 +772,148 @@ section {
     font-size: 1.1rem;
 }
 
+/* ===== Products Section ===== */
+.products-section {
+    background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+    color: var(--white);
+    padding: 6rem 0;
+    position: relative;
+}
+
+.products-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.products-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.4);
+}
+
+.products-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--white), #e5e7eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.products-subtitle {
+    font-size: 1.2rem;
+    color: #9ca3af;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.products-subsection {
+    margin-bottom: 5rem;
+}
+
+.products-subsection:last-child {
+    margin-bottom: 0;
+}
+
+.subsection-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+}
+
+.subsection-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #9ca3af;
+    margin-bottom: 3rem;
+}
+
+.vending-grid,
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.vending-item,
+.product-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(220, 38, 38, 0.3);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.vending-item:hover,
+.product-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 40px rgba(220, 38, 38, 0.4);
+}
+
+.vending-placeholder,
+.product-placeholder {
+    background: linear-gradient(135deg, #374151, #1f2937);
+    border-radius: 12px;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+}
+
+.placeholder-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+}
+
+.vending-placeholder p,
+.product-placeholder p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    margin: 0;
+}
+
+/* Cash Only Banner */
+.cash-only-banner {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: 0 8px 30px rgba(220, 38, 38, 0.5);
+    border: 3px solid var(--white);
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 8px 30px rgba(220, 38, 38, 0.5);
+    }
+    50% {
+        box-shadow: 0 8px 40px rgba(220, 38, 38, 0.8), 0 0 20px rgba(220, 38, 38, 0.6);
+    }
+}
+
 /* ===== Why Us Section - Completely Rebuilt ===== */
 .why-us-section {
     background: linear-gradient(180deg, #1f2937 0%, #374151 30%, #4b5563 60%, #6b7280 100%);
@@ -1833,6 +1975,30 @@ section {
     * {
         max-width: 100%;
     }
+
+    /* Products Section Mobile */
+    .products-title {
+        font-size: 2.5rem;
+    }
+
+    .products-subtitle {
+        font-size: 1rem;
+    }
+
+    .subsection-title {
+        font-size: 2rem;
+    }
+
+    .vending-grid,
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cash-only-banner {
+        font-size: 1.2rem;
+        padding: 1.25rem 1.5rem;
+    }
 }
 
 /* Small Mobile Devices */
@@ -2109,5 +2275,38 @@ section {
     .nav-menu a {
         padding: 0.85rem 1.5rem;
         font-size: 1.05rem;
+    }
+
+    /* Products Section Small Mobile */
+    .products-title {
+        font-size: 2rem;
+    }
+
+    .subsection-title {
+        font-size: 1.6rem;
+    }
+
+    .subsection-description {
+        font-size: 0.95rem;
+    }
+
+    .vending-placeholder,
+    .product-placeholder {
+        padding: 3rem 1.5rem;
+        min-height: 200px;
+    }
+
+    .placeholder-icon {
+        font-size: 3rem;
+    }
+
+    .vending-placeholder p,
+    .product-placeholder p {
+        font-size: 1rem;
+    }
+
+    .cash-only-banner {
+        font-size: 1rem;
+        padding: 1rem 1rem;
     }
 }
